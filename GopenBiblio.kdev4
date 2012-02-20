@@ -1,0 +1,4 @@
+[Project]
+Manager=KDevCustomMakeManager
+Name=GOpenBiblio
+VersionControl=kdevgit
