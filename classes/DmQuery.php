@@ -62,7 +62,7 @@ class DmQuery extends Query {
     }
 
     function getCheckoutStats($mbrid) {
-        $sql = $this->mkSQL("create temporary table mbrout type=heap "
+        $sql = $this->mkSQL("create temporary table mbrout engine=heap "
                             . "select b.material_cd, c.bibid, c.copyid "
                             . "from biblio_copy c, biblio b "
                             . "where c.mbrid=%N and b.bibid=c.bibid ", $mbrid);
